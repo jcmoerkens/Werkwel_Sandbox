@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Sandbox tabblad Publicaties</title>
+		<img src="WP_20150506_16_02_58_Pro.jpg" layout="responsive" width="2500" height="45"></img>
+		<style type="text/css">
+			.submit input
+			    {
+    			color: #000;
+    			background: #ffa20f;
+    			border: 2px outset #d7b9c9
+    			}
+    		table, th{ border: 1px solid black; }	
+    		td, th {
+   				 border: 1px solid #dddddd;
+				    text-align: left;
+				    padding: 8px; }
+	   </style>
+	   <script src="losse_functies.js" type="text/JavaScript"/></script>
+
+	</head>
+<body> 
+	<h3 align="center">Publicaties</h3>
+	<?php
+		echo "My first PHP script!";
+	?>
+	<!-- buttons  --> 
+	<input type="submit" onClick="history.go(-1);return true;" name="Terug" value="Terug"/>
+	<table id = "ButtonTable" align = "right">
+		<tr>	
+			<td>	
+				<input type="text" align="right" id="myInput" placeholder="Vul in en zoek">
+			</td>
+			<td>
+				<input type="submit" onClick="Filter_Opdrachten()" name="Zoeken" value="Zoek"/>
+			</td>	
+		</tr>
+	</table>
+	<p> </p>
+	
+	<table id="myTable">
+		<tr type="header">
+    		<th>Aanvraag</th>
+    		<th colspan="2">Levering</th>
+    	</tr>	
+  		<tr>
+    		<td>Alfreds Futterkiste</td>
+    		<td>Germany</td>
+  		</tr>
+  		<tr>
+    		<td>Berglunds snabbkop</td>
+    		<td>Sweden</td>
+  		</tr>
+  		<tr>
+    		<td>Island Trading</td>
+    		<td>UK</td>
+  		</tr>
+  		<tr>
+    		<td>Koniglich Essen</td>
+    		<td>Germany</td>
+		<tr>  		
+  			<td>Centro comercial Moctezuma</td>
+		    <td>Mexico</td>
+		</tr>    
+    	<tr>  		
+  			<td>Ernst Handel</td>
+		    <td>Austria</td>
+		</tr>
+		<tr>
+    		<td>Laughing Bacchus Winecellars</td>
+	   		<td>Canada</td>
+  		</tr>
+  		<tr>
+    		<td>Magazzini Alimentari Riuniti</td>
+    		<td>Italy</td>
+  		</tr>
+   	</table>	
+	<p>  </p>	
+	<input type="submit" onclick= "showInfoSandbox()" name="Informatie" value="Informatie"/>
+		
+	<p> </p>
+	<img src="WP_20150506_16_02_58_Pro.jpg" layout="responsive" width="2500" height="45"></img>
+</body>
+</html>
